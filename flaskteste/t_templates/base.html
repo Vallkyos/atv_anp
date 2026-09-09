@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "{{ url_for('static', filename='css/estilo.css') }}">
+    <title>Perfil do usuário</title>
+</head>
+<body>
+    
+    <!-- <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="70" height="70"-->
+     <img class="imgquadrada" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+    <br>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Página Inicial</a></li>
+            <li><a href="{{ url_for('contato') }}">Contatos</a></li>
+            <li><a href="{{ url_for('dados_usuario') }}">Usuario</a></li>
+        </ul>
+    </nav>
+
+    {% block conteudo %}
+    {% endblock %}
+
+    <h6>Desenvolvido por: Turma 2025</h6>
+</body>
+</html>

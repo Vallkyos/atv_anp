@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+<!-- Diretiva do Flask para indicar que esta página tem um template chamado t_base.html -->
+
+{% block conteudo %}
+
+    <p>
+      <label>NOME:</label> <h3> {{dados['nome']}} </h3>
+        <b>Profissão: </b> {{dados['profissao']}} <br/>
+        <b>Disciplina: </b> {{dados['disciplina']}}
+    </p> 
+{% endblock %}  
