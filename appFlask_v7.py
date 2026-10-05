@@ -7,7 +7,7 @@ from flask import redirect  #para redirecionar páginas
 # os templates coloca em outra pasta. 
 # Por padrão, fica na pasta templates e não precisa informar no template_folder,
 # mas se quiser armazenar em outra pasta indique nesse parâmetro.
-app_vini = Flask(__name__, template_folder='t_templates') 
+app_vini = Flask(__name__, template_folder='templates') 
 # no caso de usar flash pede a configuração de uma chave secreta
 app_vini.config['SECRET_KEY'] = "palavra-secreta-IFRO"
 
